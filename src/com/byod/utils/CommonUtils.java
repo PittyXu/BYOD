@@ -22,12 +22,14 @@ public class CommonUtils {
 
     public static String PKG_NAME = "com.byod";
 
-    public static String ONLINE_SERVER = "http://172.16.42.9:8080"; // TODO
-//    public static String ONLINE_SERVER = "http://10.0.0.16:8080"; // TODO
+//    public static String ONLINE_SERVER = "http://172.16.42.6:18080"; // TODO
+//    public static String ONLINE_SERVER2 = "http://172.16.42.6:8080"; // TODO
+    public static String ONLINE_SERVER = "http://10.0.0.16:18080"; // TODO
+    public static String ONLINE_SERVER2 = "http://10.0.0.16:8080"; // TODO
     public static String IAM_URL = ONLINE_SERVER+"/IAM/ws/webservice";
     public static String IAM_NAMESPACE = "http://inter.webservice.iam.qrry.com/";
     public static String UIA_URL = ONLINE_SERVER+"/UIA"; //TODO
-    public static String INFO_URL = ONLINE_SERVER+"/INFO"; //TODO
+    public static String INFO_URL = ONLINE_SERVER2+"/INFO"; //TODO
 
     // （设备）策略
     public static String POLICY_PREF_NAME = "policy";
@@ -57,6 +59,8 @@ public class CommonUtils {
     private static String TAG = "CommonUtils";
 
     public static final String PREF_KEY_USERACCOUNT = "useraccount"; // 账户名
+    public static final String PREF_KEY_PASSWORD = "password";
+
     private static SharedPreferences sPrefs;
 
     public static SharedPreferences initSharedPreferences(Context ctx) {
